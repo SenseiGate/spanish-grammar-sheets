@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.63">
+  <title>Estilo indirecto – Nivel B1</title>
+  <style>
+    body {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.7;
+      background: #f5f7fa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+	.level-badge {
+  display: block;
+  border: 1px solid #333;
+  background: #ffffff;
+  padding: 6px 12px;
+  font-size: 0.85em;
+  line-height: 1.4;
+  margin: 0 auto 10px auto;
+  border-radius: 4px;
+  width: fit-content;
+}
+    h1 {
+      text-align: center;
+      font-size: 1.8em;
+      color: #2a4d69;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 1.3em;
+      color: #2a4d69;
+      margin-top: 25px;
+    }
+    .section-box {
+      background: #ffffff;
+      border: 1px solid #dddddd;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      border-radius: 8px;
+    }
+    .section-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #2a4d69;
+      background: #E3EEF3;
+      padding: 12px 20px;
+      margin: -20px -24px 16px -24px;
+      border-radius: 8px 8px 0 0;
+      border-bottom: 1px solid #d0d7de;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    th, td {
+      border: 1px solid #cccccc;
+      padding: 6px 8px;
+      text-align: left;
+    }
+    th {
+      background: #E3EEF3;
+    }
+    .example-es { font-weight: bold; }
+    .example-jp { color: #555; margin-top: 4px; margin-bottom: 10px; }
+    button {
+      margin-top: 5px;
+      padding: 6px 10px;
+      cursor: pointer;
+      background: #e0e0e0;
+      color: #333;
+      border: 1px solid #c8c8c8;
+      border-radius: 6px;
+    }
+    button:hover { background: #d5d5d5; }
+    .answer {
+      display: none;
+      margin-top: 8px;
+      padding: 8px;
+      background: #f0f0f0;
+      border-left: 3px solid #999;
+    }
+    ul { padding-left: 20px; }
+  </style>
+  <script>
+    function toggleAnswer(id) {
+      const el = document.getElementById(id);
+      const current = window.getComputedStyle(el).display;
+el.style.display = current === "none" ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+
+<div class="level-badge">
+  <div class="badge-line">CEFR: B1</div>
+</div>
+
+<h1>Lección 10: Estilo indirecto</h1>
+
+<div class="section-box">
+  <div class="section-title">📚 1. Explicación gramatical（文法の説明）</div>
+
+  <p class="example-es">1) ¿Qué es el estilo indirecto?</p>
+  <p class="example-jp">
+    間接話法（estilo indirecto）は、「彼は『〜』と言った」を「彼は〜と言いました」のように、
+    他の人の言葉や考えを言い換えて伝える形です。
+  </p>
+
+  <p>
+    En estilo indirecto no repetimos las palabras exactas de la persona, sino que las
+    adaptamos dentro de una oración con verbos como <strong>decir</strong>, <strong>contar</strong>,
+    <strong>explicar</strong>, <strong>preguntar</strong>, etc.
+  </p>
+  <p class="example-jp">
+    直接の引用ではなく、「decir（言う）」「preguntar（尋ねる）」などの動詞を使って、
+    内容を文の中に組み込みます。
+  </p>
+
+  <p class="example-es">2) Estilo directo vs. estilo indirecto</p>
+
+  <table>
+    <tr>
+      <th>Tipo</th>
+      <th>Ejemplo</th>
+    </tr>
+    <tr>
+      <td>Estilo directo</td>
+      <td>María dijo: «Estoy cansada».</td>
+    </tr>
+    <tr>
+      <td>Estilo indirecto</td>
+      <td>María dijo que estaba cansada.</td>
+    </tr>
+  </table>
+
+  <p class="example-jp">
+    直接話法では「:」や「」を使ってそのまま引用しますが、間接話法では
+    「que ～」の形で内容をつなげます。
+  </p>
+
+  <p class="example-es">3) Cambios frecuentes en el estilo indirecto</p>
+  <p class="example-jp">
+    間接話法では、主語・時制・代名詞などが状況に合わせて変わることがあります。
+  </p>
+
+  <table>
+    <tr>
+      <th>Elemento</th>
+      <th>Directo</th>
+      <th>Indirecto (ejemplo)</th>
+    </tr>
+    <tr>
+      <td>Pronombres</td>
+      <td>«Yo estoy cansado»</td>
+      <td>Dijo que <strong>él</strong> estaba cansado.</td>
+    </tr>
+    <tr>
+      <td>Tiempo verbal</td>
+      <td>«Mañana voy al médico»</td>
+      <td>Dijo que <strong>iría</strong> al médico al día siguiente.</td>
+    </tr>
+    <tr>
+      <td>Preguntas sí/no</td>
+      <td>«¿Tienes tiempo?»</td>
+      <td>Me preguntó <strong>si</strong> tenía tiempo.</td>
+    </tr>
+  </table>
+
+  <p class="example-jp">
+    「que」を使う文では動詞の時制が一段階過去に下がることが多く、
+    「sí / no」で答える質問は「preguntar si ～」の形になります。
+  </p>
+</div>
+
+<div class="section-box">
+  <div class="section-title">✏️ 2. Oraciones cortas de ejemplo（短い例文）</div>
+
+  <p>
+    • Dijo que estaba muy ocupado.<br>
+    <span class="example-jp">彼はとても忙しいと言いました。</span>
+  </p>
+
+  <p>
+    • Me contó que vivía en Barcelona.<br>
+    <span class="example-jp">彼／彼女はバルセロナに住んでいると私に話しました。</span>
+  </p>
+
+  <p>
+    • Ella explicó que no podía venir.<br>
+    <span class="example-jp">彼女は来られないと説明しました。</span>
+  </p>
+
+  <p>
+    • Me preguntó si tenía tiempo libre.<br>
+    <span class="example-jp">彼／彼女は私に、時間があるかどうか尋ねました。</span>
+  </p>
+
+  <p>
+    • Dijeron que llegarían más tarde.<br>
+    <span class="example-jp">彼らはもっと遅く到着すると言いました。</span>
+  </p>
+
+  <p>
+    • Comentó que hacía mucho frío.<br>
+    <span class="example-jp">彼／彼女は、とても寒いとコメントしました。</span>
+  </p>
+
+  <p>
+    • Me preguntaron si conocía la ciudad.<br>
+    <span class="example-jp">彼らは私に、その町を知っているかどうか尋ねました。</span>
+  </p>
+</div>
+
+<div class="section-box">
+  <div class="section-title">📝 3. Oraciones largas de ejemplo（長い例文）</div>
+
+  <p>
+    • Mi profesor dijo que, si estudiábamos un poco cada día, mejoraríamos mucho nuestro nivel de español.<br>
+    <span class="example-jp">先生は、毎日少しずつ勉強すれば、スペイン語のレベルが大きく上がると言いました。</span>
+  </p>
+
+  <p>
+    • Ana me explicó que no había venido a la reunión porque se sentía enferma desde la mañana.<br>
+    <span class="example-jp">アナは、朝から体調が悪かったので会議に来なかったのだと私に説明しました。</span>
+  </p>
+
+  <p>
+    • Mis amigos comentaron que querían viajar a Japón el próximo año si encontraban un buen precio.<br>
+    <span class="example-jp">友だちは、良い値段のチケットが見つかれば、来年日本へ旅行したいと言っていました。</span>
+  </p>
+
+  <p>
+    • El director nos dijo que teníamos que entregar el proyecto antes del viernes por la tarde.<br>
+    <span class="example-jp">部長は、金曜日の午後までにプロジェクトを提出しなければならないと私たちに言いました。</span>
+  </p>
+
+  <p>
+    • Mi compañera me preguntó si podía ayudarla con la presentación porque estaba muy nerviosa.<br>
+    <span class="example-jp">同僚は、とても緊張しているのでプレゼンの手伝いをしてくれないかと私に頼みました。</span>
+  </p>
+</div>
+
+<div class="section-box">
+  <div class="section-title">🧩 4. Ejercicios prácticos（練習問題）</div>
+
+  <h3>Ejercicio A – Elige la opción correcta（正しい形を選びましょう）</h3>
+
+  <p>1. «Estoy cansado». → Dijo que _______ cansado.</p>
+  <ul>
+    <li>a) está</li>
+    <li>b) estaba</li>
+    <li>c) estaría</li>
+  </ul>
+  <button onclick="toggleAnswer('ea1')">Mostrar respuesta</button>
+  <div id="ea1" class="answer">Respuesta: b) estaba</div>
+
+  <p>2. «No puedo ir mañana». → Ella explicó que no _______ ir al día siguiente.</p>
+  <ul>
+    <li>a) puede</li>
+    <li>b) podía</li>
+    <li>c) podrá</li>
+  </ul>
+  <button onclick="toggleAnswer('ea2')">Mostrar respuesta</button>
+  <div id="ea2" class="answer">Respuesta: b) podía</div>
+
+  <p>3. «¿Tienes tiempo ahora?» → Me preguntó si _______ tiempo en ese momento.</p>
+  <ul>
+    <li>a) tengo</li>
+    <li>b) tenía</li>
+    <li>c) tendré</li>
+  </ul>
+  <button onclick="toggleAnswer('ea3')">Mostrar respuesta</button>
+  <div id="ea3" class="answer">Respuesta: b) tenía</div>
+
+  <p>4. «Vivimos en Madrid». → Dijeron que _______ en Madrid.</p>
+  <ul>
+    <li>a) viven</li>
+    <li>b) vivían</li>
+    <li>c) vivirán</li>
+  </ul>
+  <button onclick="toggleAnswer('ea4')">Mostrar respuesta</button>
+  <div id="ea4" class="answer">Respuesta: b) vivían</div>
+
+  <p>5. «¿Puedes ayudarme?» → Me preguntó si _______ ayudarla.</p>
+  <ul>
+    <li>a) puedo</li>
+    <li>b) podía</li>
+    <li>c) podré</li>
+  </ul>
+  <button onclick="toggleAnswer('ea5')">Mostrar respuesta</button>
+  <div id="ea5" class="answer">Respuesta: b) podía</div>
+
+  <h3>Ejercicio B – Convierte al estilo indirecto（間接話法に変えましょう）</h3>
+  <p class="example-jp">
+    直接話法を間接話法に言い換えましょう。動詞の時制の変化に注意してください。
+  </p>
+
+  <p>1. «Estoy estudiando español». → Dijo que _______.</p>
+  <button onclick="toggleAnswer('eb1')">Mostrar respuesta</button>
+  <div id="eb1" class="answer">Dijo que estaba estudiando español.</div>
+
+  <p>2. «No tengo tiempo hoy». → Explicó que no _______ tiempo ese día.</p>
+  <button onclick="toggleAnswer('eb2')">Mostrar respuesta</button>
+  <div id="eb2" class="answer">Explicó que no tenía tiempo ese día.</div>
+
+  <p>3. «¿Vas a venir mañana?» → Me preguntó si _______ al día siguiente.</p>
+  <button onclick="toggleAnswer('eb3')">Mostrar respuesta</button>
+  <div id="eb3" class="answer">Me preguntó si iba a venir al día siguiente.</div>
+
+  <p>4. «Vivimos cerca de la estación». → Dijeron que _______ cerca de la estación.</p>
+  <button onclick="toggleAnswer('eb4')">Mostrar respuesta</button>
+  <div id="eb4" class="answer">Dijeron que vivían cerca de la estación.</div>
+
+  <p>5. «¿Puedes explicarme esta gramática?» → Me preguntó si _______ explicarle esa gramática.</p>
+  <button onclick="toggleAnswer('eb5')">Mostrar respuesta</button>
+  <div id="eb5" class="answer">Me preguntó si podía explicarle esa gramática.</div>
+</div>
+
+<div class="section-box">
+  <div class="section-title">📖 5. Texto de lectura（短い読解文）</div>
+
+  <p class="example-es"><strong>Una reunión llena de noticias</strong></p>
+
+  <p>
+    Ayer tuve una reunión con varios amigos a los que no veía desde hacía mucho tiempo.
+    Primero, Laura dijo que había cambiado de trabajo y que ahora estaba más contenta.
+    También comentó que su jefe le daba más libertad para organizar su horario. Después,
+    Marcos explicó que estaba estudiando un máster en línea porque quería mejorar sus
+    oportunidades profesionales.
+  </p>
+
+  <p>
+    Más tarde, Ana nos contó que se iba a mudar a otra ciudad el próximo año. Dijo que
+    tenía un poco de miedo, pero que también estaba muy ilusionada. Al final, todos
+    coincidimos en que nuestras vidas habían cambiado mucho en los últimos años. Uno de
+    mis amigos comentó que, si no nos reuniéramos de vez en cuando, sería fácil perder
+    el contacto. Yo pensé que tenía razón y prometí que organizaría otra reunión pronto.
+  </p>
+
+  <p class="example-jp-title"><strong>ニュースでいっぱいの再会</strong></p>
+
+  <p class="example-jp">
+    昨日、長い間会っていなかった友だち数人と集まりました。まず、ラウラは仕事を変えたと言い、
+    今のほうが満足していると話しました。また、上司がスケジュールの決め方について、
+    以前より自由を与えてくれるとコメントしました。そのあと、マルコスは、仕事のチャンスを
+    広げたいのでオンラインの修士課程で勉強していると説明しました。
+  </p>
+
+  <p class="example-jp">
+    その後、アナは来年別の町に引っ越すつもりだと私たちに話しました。少し不安もあるけれど、
+    とても楽しみでもあると言いました。最後に、ここ数年で自分たちの生活が大きく変わったと
+    みんなで確認しました。友だちの一人は、「ときどき会わなければ、簡単に連絡が途切れてしまう」
+    とコメントしました。私はその通りだと思い、近いうちにまた集まりを企画すると約束しました。
+  </p>
+</div>
+
+<div class="section-box">
+  <div class="section-title">❓ 6. Preguntas de comprensión（読解問題）</div>
+
+  <p>
+    1. ¿Qué dijo Laura sobre su trabajo?<br>
+    <span class="example-jp">ラウラは仕事について何と言いましたか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc1')">Mostrar respuesta</button>
+  <div id="pc1" class="answer">
+    Dijo que había cambiado de trabajo y que ahora estaba más contenta.
+  </div>
+
+  <p>
+    2. ¿Por qué está estudiando un máster Marcos?<br>
+    <span class="example-jp">マルコスはなぜ修士課程で勉強しているのですか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc2')">Mostrar respuesta</button>
+  <div id="pc2" class="answer">
+    Porque quiere mejorar sus oportunidades profesionales.
+  </div>
+
+  <p>
+    3. ¿Qué va a hacer Ana el próximo año?<br>
+    <span class="example-jp">アナは来年何をする予定ですか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc3')">Mostrar respuesta</button>
+  <div id="pc3" class="answer">
+    Se va a mudar a otra ciudad.
+  </div>
+
+  <p>
+    4. ¿Qué comentó uno de los amigos sobre reunirse?<br>
+    <span class="example-jp">友だちの一人は、集まることについて何とコメントしましたか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc4')">Mostrar respuesta</button>
+  <div id="pc4" class="answer">
+    Comentó que, si no se reunían de vez en cuando, sería fácil perder el contacto.
+  </div>
+
+  <p>
+    5. ¿Qué prometió el narrador al final de la reunión?<br>
+    <span class="example-jp">話し手は最後に何を約束しましたか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc5')">Mostrar respuesta</button>
+  <div id="pc5" class="answer">
+    Prometió que organizaría otra reunión pronto.
+  </div>
+</div>
+
+<div class="section-box">
+  <div class="section-title">🎯 Resumen（まとめ）</div>
+  <ul>
+    <li>El <strong>estilo indirecto</strong> sirve para contar lo que otra persona <strong>dijo o preguntó</strong>.<br>
+      <span class="example-jp">間接話法は、他の人が言ったことや質問したことを伝えるときに使います。</span>
+    </li>
+    <li>Usamos verbos como <strong>decir</strong>, <strong>explicar</strong>, <strong>contar</strong>, <strong>preguntar</strong> + <strong>que / si</strong>.<br>
+      <span class="example-jp">decir, explicar, contar, preguntar などの動詞と「que / si」をよく使います。</span>
+    </li>
+    <li>A menudo los <strong>tiempos verbales cambian</strong> un paso hacia el pasado.<br>
+      <span class="example-jp">動詞の時制は、一段階過去に下がることが多いです。</span>
+    </li>
+    <li>Las <strong>preguntas de sí/no</strong> se transforman con <strong>preguntar si + verbo</strong>.<br>
+      <span class="example-jp">「はい／いいえ」で答える質問は「preguntar si ＋ 動詞」の形になります。</span>
+    </li>
+  </ul>
+</div>
+<div style="text-align:center; margin-top:30px;">
+  <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Volver al índice</a>
+</div>
+</body>
+</html>

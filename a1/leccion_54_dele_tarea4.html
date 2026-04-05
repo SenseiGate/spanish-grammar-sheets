@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.63">
+  <title>Lección 54 – DELE A1: Comprensión de lectura (Tarea 4)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #333;
+    }
+	.level-badge {
+  display: block;
+  border: 1px solid #333;
+  background: #ffffff;
+  padding: 6px 12px;
+  font-size: 0.85em;
+  line-height: 1.4;
+  margin: 0 auto 10px auto;
+  border-radius: 4px;
+  width: fit-content;
+}
+    h1 {
+      text-align: center;
+      font-size: 1.8em;
+      color: #2a4d69;
+    }
+    h2 {
+      background: #E3EEF3;
+      color: #2a4d69;
+      font-size: 1.2em;
+      padding: 12px 20px;
+      margin: -18px -20px 16px -20px;
+      border-radius: 10px 10px 0 0;
+      border-bottom: 1px solid #d0d7de;
+    }
+    .section-box {
+      background: #ffffff;
+      border: 1px solid #d0d7de;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-top: 18px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+    .texto {
+      background: #eef3f7;
+      padding: 14px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border-left: 4px solid #2a4d69;
+    }
+    button {
+      margin-top: 5px;
+      padding: 6px 10px;
+      cursor: pointer;
+      background: #e0e0e0;
+      color: #333;
+      border: 1px solid #c8c8c8;
+      border-radius: 6px;
+    }
+    button:hover {
+      background: #d5d5d5;
+    }
+    .answer {
+      display: none;
+      margin-top: 8px;
+      padding: 8px;
+      background: #f0f0f0;
+      border-left: 3px solid #999;
+    }
+    .jp {
+      color: #555;
+      font-size: 0.95em;
+    }
+  </style>
+</head><body>
+<div class="level-badge">
+  <div class="badge-line">DELE: A1</div>
+</div>
+<h1>D4: Comprensión de lectura (Tarea 4)</h1>
+
+<div class="section-box">
+  <h2>📚 1. Explicación de la tarea</h2>
+
+  <p>En la Tarea 4 del DELE A1 vas a leer <strong>varios textos breves</strong> y responder preguntas globales sobre ellos.</p>
+
+  <p class="jp">DELE A1 の読解タスク4では、複数の短い文章を読み、それらに関する全体的な質問に答えます。</p>
+
+  <ul>
+    <li>4–5 textos breves</li>
+    <li>Preguntas sobre información general</li>
+    <li>Opciones A, B, C</li>
+  </ul>
+
+  <p>Es una tarea de lectura rápida y comparación.</p>
+</div>
+
+<div class="section-box">
+  <h2>✏️ 2. Ejemplo modelo (estilo DELE)</h2>
+
+  <div class="texto">
+    <strong>Texto A</strong><br>
+    “Busco compañero/a para compartir piso. Zona tranquila. 300€ al mes.”
+  </div>
+
+  <div class="texto">
+    <strong>Texto B</strong><br>
+    “Se alquila habitación cerca de la universidad. 250€ al mes.”
+  </div>
+
+  <div class="texto">
+    <strong>Texto C</strong><br>
+    “Habitación grande en el centro. 400€ al mes.”
+  </div>
+
+  <p><strong>1. ¿Cuál es la opción más barata?</strong><br>
+    <span class="jp">一番安いのはどれですか。</span>
+  </p>
+  <ul>
+    <li>A. Texto A</li>
+    <li>B. Texto B</li>
+    <li>C. Texto C</li>
+  </ul>
+  <button onclick="toggleAnswer('e1')">Mostrar respuesta</button>
+  <div id="e1" class="answer">B. Texto B</div>
+
+  <p><strong>2. ¿Cuál está en una zona tranquila?</strong><br>
+    <span class="jp">静かな地域にあるのはどれですか。</span>
+  </p>
+  <ul>
+    <li>A. Texto A</li>
+    <li>B. Texto B</li>
+    <li>C. Texto C</li>
+  </ul>
+  <button onclick="toggleAnswer('e2')">Mostrar respuesta</button>
+  <div id="e2" class="answer">A. Texto A</div>
+
+</div>
+
+<div class="section-box">
+  <h2>📝 3. Mini‑práctica guiada</h2>
+
+  <div class="texto">
+    <strong>Texto D</strong><br>
+    “Restaurante italiano. Menú del día: 12€.”
+  </div>
+
+  <div class="texto">
+    <strong>Texto E</strong><br>
+    “Restaurante japonés. Menú del día: 15€.”
+  </div>
+
+  <div class="texto">
+    <strong>Texto F</strong><br>
+    “Restaurante vegetariano. Menú del día: 10€.”
+  </div>
+
+  <p><strong>1. ¿Cuál es el menú más barato?</strong><br>
+    <span class="jp">一番安いメニューはどれですか。</span>
+  </p>
+  <ul>
+    <li>A. Texto D</li>
+    <li>B. Texto E</li>
+    <li>C. Texto F</li>
+  </ul>
+  <button onclick="toggleAnswer('m1')">Mostrar respuesta</button>
+  <div id="m1" class="answer">C. Texto F</div>
+
+  <p><strong>2. ¿Cuál ofrece comida japonesa?</strong><br>
+    <span class="jp">日本食を提供しているのはどれですか。</span>
+  </p>
+  <ul>
+    <li>A. Texto D</li>
+    <li>B. Texto E</li>
+    <li>C. Texto F</li>
+  </ul>
+  <button onclick="toggleAnswer('m2')">Mostrar respuesta</button>
+  <div id="m2" class="answer">B. Texto E</div>
+
+</div>
+
+<div class="section-box">
+  <h2>📖 4. Textos estilo DELE (conjunto completo)</h2>
+
+  <div class="texto">
+    <strong>Texto 1</strong><br>
+    “Clases de guitarra para principiantes. Martes y jueves.”
+  </div>
+
+  <div class="texto">
+    <strong>Texto 2</strong><br>
+    “Clases de piano. Profesora con experiencia. Fines de semana.”
+  </div>
+
+  <div class="texto">
+    <strong>Texto 3</strong><br>
+    “Clases de violín para niños. Sábados por la mañana.”
+  </div>
+
+  <p><strong>1. ¿Qué clase es solo para niños?</strong><br>
+    <span class="jp">子ども向けのクラスはどれですか。</span>
+  </p>
+  <ul>
+    <li>A. Guitarra</li>
+    <li>B. Piano</li>
+    <li>C. Violín</li>
+  </ul>
+  <button onclick="toggleAnswer('d1')">Mostrar respuesta</button>
+  <div id="d1" class="answer">C. Violín</div>
+
+  <p><strong>2. ¿Qué clase es los fines de semana?</strong><br>
+    <span class="jp">週末に行われるクラスはどれですか。</span>
+  </p>
+  <ul>
+    <li>A. Guitarra</li>
+    <li>B. Piano</li>
+    <li>C. Violín</li>
+  </ul>
+  <button onclick="toggleAnswer('d2')">Mostrar respuesta</button>
+  <div id="d2" class="answer">B. Piano</div>
+
+  <p><strong>3. ¿Qué clases son entre semana?</strong><br>
+    <span class="jp">平日に行われるクラスはどれですか。</span>
+  </p>
+  <ul>
+    <li>A. Solo guitarra</li>
+    <li>B. Guitarra y violín</li>
+    <li>C. Guitarra y piano</li>
+  </ul>
+  <button onclick="toggleAnswer('d3')">Mostrar respuesta</button>
+  <div id="d3" class="answer">A. Solo guitarra</div>
+
+</div>
+
+<div class="section-box">
+  <h2>❓ 5. Preguntas de comprensión（読解問題）</h2>
+
+  <p>1. ¿Qué debes comparar en esta tarea?<br>
+    <span class="jp">このタスクでは何を比較しますか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc1')">Mostrar respuesta</button>
+  <div id="pc1" class="answer">Varios textos breves.</div>
+
+  <p>2. ¿Qué tipo de preguntas aparecen?<br>
+    <span class="jp">どんな質問が出ますか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc2')">Mostrar respuesta</button>
+  <div id="pc2" class="answer">Preguntas globales sobre información general.</div>
+
+  <p>3. ¿Cuántas opciones tiene cada pregunta?<br>
+    <span class="jp">選択肢はいくつですか。</span>
+  </p>
+  <button onclick="toggleAnswer('pc3')">Mostrar respuesta</button>
+  <div id="pc3" class="answer">Tres opciones.</div>
+
+</div>
+
+<div class="section-box">
+  <h2>🎯 6. Resumen（まとめ）</h2>
+  <ul>
+    <li>Varios textos breves.<br><span class="jp">複数の短い文章を読みます。</span></li>
+    <li>Preguntas globales.<br><span class="jp">全体的な質問に答えます。</span></li>
+    <li>Comparación rápida.<br><span class="jp">素早く比較します。</span></li>
+    <li>Formato idéntico al DELE A1 real.<br><span class="jp">本試験の DELE A1 と同じ形式です。</span></li>
+  </ul>
+</div>
+
+<div style="text-align:center; margin-top:30px;">
+  <a href="index.html" style="text-decoration:none; font-size:18px;">⬅️ Volver al índice</a>
+</div>
+
+<script>
+function toggleAnswer(id) {
+  const el = document.getElementById(id);
+  el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+}
+</script>
+
+</body>
+</html>
