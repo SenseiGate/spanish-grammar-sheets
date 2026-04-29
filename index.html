@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0.60">
+  <meta name="viewport" content="width=device-width, initial-scale=0.60">
   <title>Fichas Interactivas de Gramática en Español</title>
-
   <link rel="manifest" href="manifest.json">
-
+  <link rel="icon" href="assets/icons/icon_sg_512.png">
+  <link rel="apple-touch-icon" href="assets/icons/icon_sg_512.png">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,27 +15,23 @@
       padding: 60px 20px;
       color: #333;
     }
-
     h1 {
       font-size: 34px;
       margin-bottom: 10px;
       color: #2a4d69;
     }
-
     h2 {
       font-size: 20px;
       margin: 0;
       color: #555;
       font-weight: normal;
     }
-
     h3 {
       font-size: 18px;
       margin-top: 8px;
       color: #777;
       font-weight: normal;
     }
-
     .info-box {
       background: #ffffff;
       border: 1px solid #d0d7de;
@@ -49,18 +45,16 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
       text-align: left;
     }
-
     .section-title {
       margin-top: 40px;
       font-size: 26px;
       color: #222;
     }
-
     .btn {
       display: block;
-      width: 260px;
+      width: 280px;
+      padding: 18px 20px;
       margin: 20px auto;
-      padding: 18px 40px;
       font-size: 22px;
       color: white;
       background-color: #007BFF;
@@ -68,22 +62,18 @@
       border-radius: 10px;
       transition: background 0.2s;
     }
-
     .btn:hover {
       background-color: #0056b3;
     }
-
-    /* ⭐ MISMA CLASE QUE EN INGLÉS */
     .link-blue {
       color: #007BFF;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.2s;
     }
-
     .link-blue:hover {
       color: #0056b3;
     }
-
     .mini-table {
       background: #ffffff;
       border: 1px solid #d0d7de;
@@ -94,58 +84,38 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
       font-size: 16px;
     }
-
     .mini-table table {
       width: 100%;
       border-collapse: collapse;
     }
-
     .mini-table th, .mini-table td {
       padding: 10px;
       border-bottom: 1px solid #e5e5e5;
     }
-
     .mini-table th {
       background: #E3EEF3;
       font-weight: bold;
     }
-
-    .signature {
-      margin-top: 30px;
-      font-size: 16px;
-      background: #E3EEF3;
-      padding: 12px 20px;
-      display: inline-block;
-      border-radius: 8px;
-      color: #2a4d69;
-      font-weight: bold;
-    }
-
     .profile-pic {
-      margin-top: 12px;
       width: 140px;
       height: 140px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #E3EEF3;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      object-fit: contain;
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+      display: block;
+      margin: 0 auto 20px;
     }
-
     .footer-note {
-      margin-top: 25px;
+      margin-top: 5px;
       font-size: 13px;
       color: #333;
     }
-</style>
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="assets/icons/icon_sg_512.png">
-<link rel="apple-touch-icon" href="assets/icons/icon_sg_512.png">
-
+  </style>
 </head>
 <body>
-
+  <img src="SG_logo_512.png" class="profile-pic" alt="SenseiGate">
   <h1>Fichas Interactivas de Gramática en Español</h1>
-
   <h2>Fichas prácticas y estructuradas para estudiantes independientes</h2>
   <p>自分で学び進めたい人のための、わかりやすく整理された文法シート</p>
 
@@ -155,7 +125,6 @@
   <a class="btn" href="a2/index.html">Fichas A2</a>
   <a class="btn" href="b1/index.html">Fichas B1</a>
 
-  <!-- ⭐ CUADRO CEFR ↔ DELE -->
   <div class="mini-table">
     <table>
       <tr>
@@ -172,20 +141,19 @@
     </table>
   </div>
 
-  <div style="margin-top: 40px; display: flex; align-items: center; justify-content: center; gap: 20px;">
-    <img src="SG_logo_512.png" class="profile-pic" alt="SenseiGate">
-    <div class="signature" style="margin: 0;">Created by Adrian Sensei</div>
+  <div style="font-size: 12px; color: #555; max-width: 600px; margin: 10px auto 20px; text-align: left;">
+    Las fichas toman como referencia los niveles CEFR y DELE, pero la correspondencia es aproximada y puede no coincidir exactamente con los estándares oficiales.<br>
+    本サイトのフィッシャはCEFRとDELEを参考にしていますが、この対応は概略であり、公式基準と完全に一致しない場合があります。
   </div>
 
   <div class="footer-note">
-    © <span id="year"></span> Adrian Sensei. All rights reserved. 無断転載を禁じます。
+    © <span id="year"></span> SenseiGate. All rights reserved. 無断転載を禁じます。
   </div>
 
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js');
     }
-
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
