@@ -311,5 +311,17 @@
 
 <a href="../index.html" class="home">Home</a>
 
-</body>
-</html>
+<hr style="border:0; border-top:1px solid #ccc; margin:40px 0;">
+
+<div style="text-align:center; color:#777; font-size:14px; margin-bottom:30px;">
+  © <span id="year"></span> SenseiGate · All rights reserved · 無断転載を禁じます
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
+});
+</script>
+
+</body></html>
