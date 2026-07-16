@@ -135,18 +135,70 @@ el.style.display = current === "none" ? "block" : "none";
   <p><strong>En español</strong>, a veces se pueden omitir porque el verbo muestra la persona.</p>
   <p class="jp">スペイン語では、動詞の形で主語が分かるため、省略できることが多いです。</p>
 
-  <table>
-    <tr><th>Pronombre</th><th>Uso</th><th>日本語</th></tr>
-    <tr><td>yo</td><td>1ª persona singular</td><td>私</td></tr>
-    <tr><td>tú</td><td>2ª persona informal</td><td>君 / あなた</td></tr>
-    <tr><td>usted</td><td>2ª persona formal singular</td><td>あなた（丁寧）</td></tr>
-    <tr><td>él / ella</td><td>3ª persona singular</td><td>彼 / 彼女</td></tr>
-    <tr><td>nosotros / nosotras</td><td>1ª persona plural</td><td>私たち</td></tr>
-    <tr><td>vosotros / vosotras</td><td>2ª persona plural informal</td><td>君たち（主にスペインで使用）</td></tr>
-    <tr><td>ustedes</td><td>2ª persona plural formal</td><td>あなたがた</td></tr>
-    <tr><td>ellos / ellas</td><td>3ª persona plural</td><td>彼ら / 彼女たち</td></tr>
+  <table style="border-collapse:collapse; width:100%; margin-top:10px;">
+    <thead>
+      <tr>
+        <th style="background:#E3EEF3; color:#2a4d69; border:1px solid #d0d7de; padding:8px 10px; text-align:center;">Número</th>
+        <th style="background:#E3EEF3; color:#2a4d69; border:1px solid #d0d7de; padding:8px 10px; text-align:center;">Persona</th>
+        <th style="background:#E3EEF3; color:#2a4d69; border:1px solid #d0d7de; padding:8px 10px; text-align:center;">Pronombre</th>
+        <th style="background:#E3EEF3; color:#2a4d69; border:1px solid #d0d7de; padding:8px 10px; text-align:center;">日本語</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- SINGULAR -->
+      <tr>
+        <td rowspan="5" style="border:1px solid #d0d7de; padding:8px 10px; text-align:center; font-weight:bold; background:#f7fbfd; color:#2a4d69; vertical-align:middle;">Singular</td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">1ª</td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;"><strong>yo</strong></td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">私</td>
+      </tr>
+      <tr>
+        <td rowspan="2" style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">2ª</td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;"><strong>tú</strong> / <strong>vos</strong> <span style="font-size:0.8em;color:#777;">*</span></td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">君 / あなた</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;"><strong>usted</strong> <span style="font-size:0.75em;background:#E3EEF3;color:#2a4d69;border-radius:10px;padding:1px 7px;">formal</span></td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">あなた（丁寧）</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">3ª</td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;"><strong>él / ella</strong></td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">彼 / 彼女</td>
+      </tr>
+      <!-- spacer row for visual separation -->
+      <tr><td colspan="3" style="border:none;padding:0;height:4px;background:#f5f7fa;"></td></tr>
+
+      <!-- PLURAL -->
+      <tr>
+        <td rowspan="5" style="border:1px solid #d0d7de; padding:8px 10px; text-align:center; font-weight:bold; background:#f7fbfd; color:#2a4d69; vertical-align:middle;">Plural</td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">1ª</td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;"><strong>nosotros / nosotras</strong></td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">私たち</td>
+      </tr>
+      <tr>
+        <td rowspan="2" style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">2ª</td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;"><strong>vosotros / vosotras</strong> <span style="font-size:0.75em;color:#777;">主にスペイン</span></td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">君たち</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;"><strong>ustedes</strong> <span style="font-size:0.75em;background:#E3EEF3;color:#2a4d69;border-radius:10px;padding:1px 7px;">formal</span></td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">あなたがた</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">3ª</td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;"><strong>ellos / ellas</strong></td>
+        <td style="border:1px solid #d0d7de; padding:8px 10px; text-align:center;">彼ら / 彼女たち</td>
+      </tr>
+      <tr><td colspan="3" style="border:none;padding:0;height:4px;background:#f5f7fa;"></td></tr>
+    </tbody>
   </table>
-  <p class="jp">※「vosotros/vosotras」は主にスペインで使われます。ラテンアメリカでは「ustedes」を使います。</p>
+
+  <p class="jp" style="margin-top:12px;">
+    ※「vosotros/vosotras」は主にスペインで使われます。ラテンアメリカでは「ustedes」を使います。<br>
+    ※「usted / ustedes」は意味上は2人称（相手への敬称）ですが、動詞は3人称として活用します。例：usted habla（= él habla）<br>
+    ＊「vos」はアルゼンチン・ウルグアイ・パラグアイなど、ラテンアメリカの複数の国で広く使われています。
+  </p>
 
 </div>
 
